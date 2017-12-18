@@ -11,13 +11,13 @@
         <a-asset-item id="christmas-tree" src="christmas_tree/scene.gltf"></a-asset-item>
       </a-assets>  
 
-      <a-gltf-model src="#menorah" scale=".005 .005 .005" position="0 0 -5"></a-gltf-model>
+      <a-gltf-model src="#menorah" scale=".005 .005 .005" position="-2 0 -5"></a-gltf-model>
       <a-gltf-model src="#christmas-tree" scale=".03 .03 .03" position="1 1.750 -5"></a-gltf-model>
+
+      <a-entity position="0 2.25 -5" particle-system="preset: snow; color: #555; particleCount: 2000"></a-entity>
 
       <a-plane position="0 0 -4" rotation="-90 0 0" width="400" height="400" color="#FFF"></a-plane>
       <a-sky color="#00AAFF"></a-sky>
-      <a-entity position="0 2.25 -5" particle-system="preset: snow; color: #555; particleCount: 2000"></a-entity>
-
     </a-scene>
   </body>
 </html>
