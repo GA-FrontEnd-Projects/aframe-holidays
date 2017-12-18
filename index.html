@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="menorah" src="menorah/scene.gltf"></a-asset-item>
+        <a-asset-item id="tree" src="tree/scene.gltf"></a-asset-item>
+        <a-asset-item id="christmas-tree" src="christmas_tree/scene.gltf"></a-asset-item>
+      </a-assets>  
+
+      <a-gltf-model src="#menorah" scale=".005 .005 .005" position="0 0 -5"></a-gltf-model>
+      <a-gltf-model src="#christmas-tree" scale=".03 .03 .03" position="1 1.750 -5"></a-gltf-model>
+
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="400" height="400" color="#FFF"></a-plane>
+      <a-sky color="#00AAFF"></a-sky>
+      <a-entity position="0 2.25 -5" particle-system="preset: snow; color: #555; particleCount: 2000"></a-entity>
+
+    </a-scene>
+  </body>
+</html>
