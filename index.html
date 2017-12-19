@@ -2,6 +2,7 @@
   <head>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <!-- <script src="/skydive-system.js"></script> -->
   </head>
   <body>
     <a-scene>
@@ -9,10 +10,22 @@
         <a-asset-item id="menorah" src="menorah/scene.gltf"></a-asset-item>
         <a-asset-item id="tree" src="tree/scene.gltf"></a-asset-item>
         <a-asset-item id="christmas-tree" src="christmas_tree/scene.gltf"></a-asset-item>
+        <a-asset-item id="gift" src="gift/scene.gltf"></a-asset-item>
       </a-assets>  
 
       <a-gltf-model src="#menorah" scale=".005 .005 .005" position="-2 0 -5"></a-gltf-model>
-      <a-gltf-model src="#christmas-tree" scale=".03 .03 .03" position="1 1.750 -5"></a-gltf-model>
+      <a-gltf-model src="#christmas-tree" scale=".03 .03 .03" position="6 1.750 -6"></a-gltf-model>
+      <a-gltf-model src="#christmas-tree" scale=".03 .03 .03" position="-3 1.750 -9"></a-gltf-model>
+      <a-gltf-model src="#christmas-tree" scale=".03 .03 .03" position="3 1.750 -4"></a-gltf-model>
+      <a-gltf-model src="#christmas-tree" scale=".03 .03 .03" position="4 1.750 -2"></a-gltf-model>
+      <a-gltf-model src="#christmas-tree" scale=".03 .03 .03" position="2 1.750 -1"></a-gltf-model>
+      <a-gltf-model src="#christmas-tree" scale=".03 .03 .03" position="7 1.750 -7"></a-gltf-model>
+      <a-gltf-model src="#christmas-tree" scale=".03 .03 .03" position="3 1.750 -5"></a-gltf-model>
+
+      <a-gltf-model src="#gift" scale=".004 .004 .004" position="1 0 -4"></a-gltf-model>
+      <a-gltf-model src="#gift" scale=".004 .004 .004" position="-3 0 -4"></a-gltf-model>
+
+      <a-camera position="0 0 0" wasd-controls rotation="0 0 0" look-controls></a-camera>
 
       <a-entity position="0 2.25 -5" particle-system="preset: snow; color: #555; particleCount: 2000"></a-entity>
 
